@@ -1,24 +1,67 @@
-# README
+# Quote Editor
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Building a Quote Editor using Ruby on Rails 7 following the Hotwire Tutorial available at https://www.hotrails.dev/turbo-rails
 
-Things you may want to cover:
+<table>
+  <tr>
+    <td>Ruby</td>
+    <td>3.1.2</td>
+  </tr>
+  <tr>
+    <td>Rails</td>
+    <td>7.0.2.3</td>
+  </tr>
+  <tr>
+    <td>Node</td>
+    <td>16.14.2</td>
+  </tr>
+  <tr>
+    <td>NPM</td>
+    <td>8.5.0</td>
+  </tr>
+  <tr>
+    <td>Yarn</td>
+    <td>1.22.18</td>
+  </tr>
+  <tr>
+    <td>Database</td>
+    <td>PostgreSQL</td>
+  </tr>
+</table>
 
-* Ruby version
+## Installation
 
-* System dependencies
+```bash
+  # clone the project
+  git clone https://github.com/karinevieira/quote-editor-hotwire.git
 
-* Configuration
+  # enter the cloned directory
+  cd quote-editor-hotwire
 
-* Database creation
+  # install Node dependencies
+  yarn install
 
-* Database initialization
+  # create the development and test databases
+  rails db:create
 
-* How to run the test suite
+  # migrate tables to database
+  rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+  # run the project
+  rails s
+```
+Open the browser at the address http://localhost:3000 
 
-* Deployment instructions
+## Running Tests
 
-* ...
+To run tests, run the following command
+
+```bash
+  rails test:all
+```
+
+## Load SCSS
+
+```bash
+  yarn build:css --watch
+```
