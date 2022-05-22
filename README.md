@@ -33,7 +33,7 @@ Building a Quote Editor using Ruby on Rails 7 following the Hotwire Tutorial ava
 
 ```bash
   # clone the project
-  git clone https://github.com/karinevieira/quote-editor-hotwire.git
+  git clone git@github.com:karinevieira/quote-editor-hotwire.git
 
   # enter the cloned directory
   cd quote-editor-hotwire
@@ -48,7 +48,7 @@ Building a Quote Editor using Ruby on Rails 7 following the Hotwire Tutorial ava
   rails db:migrate
 
   # run the project
-  rails s
+  bin/dev
 ```
 Open the browser at the address http://localhost:3000 
 
@@ -58,10 +58,4 @@ To run tests, run the following command
 
 ```bash
   rails test:all
-```
-
-## Load SCSS
-
-```bash
-  yarn build:css --watch
 ```
